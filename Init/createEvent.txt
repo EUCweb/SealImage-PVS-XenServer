@@ -1,0 +1,3 @@
+eventcreate /T INFORMATION /SO SealMasterImage /ID 1000 /L APPLICATION /D “<Params><VMName>TSW041XA7XXXZ</VMName><PVSCollection>XA7_Maintenance</PVSCollection><PVSDiskStore>XenApp 76</PVSDiskStore><PVSDiskName>vDisk-XA7-STD</PVSDiskName></Params>”
+
+schtasks /create /TN “Event Viewer Tasks\SealMasterImage” /XML "SealMasterImage.xml"
